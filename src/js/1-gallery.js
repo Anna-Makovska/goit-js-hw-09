@@ -1,5 +1,5 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -69,7 +69,7 @@ const images = [
 
 const container = document.querySelector('.gallery');
 function templateImage(image) {
-  return `<li class="gallery-item">
+    return `<li class="gallery-item">
   <a class="gallery-link" href=${image.original}>
     <img
       class="gallery-image"
@@ -78,8 +78,8 @@ function templateImage(image) {
     />
   </a>
 </li>
-`;
-}
+`
+};
 
 function templateImages(images) {
   return images.map(templateImage).join('');
@@ -89,8 +89,9 @@ const markup = templateImages(images);
 container.innerHTML = markup;
 // console.log(markup);
 
-container.addEventListener("click", (evt) => {
-    evt.preventDefault
-});
+import SimpleLightbox from "simplelightbox";
 
-const gallery = new SimpleLightbox(".gallery");
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+
+const lightbox = new SimpleLightbox(".gallery ");
