@@ -7,14 +7,15 @@ let formData = {
 };
 
 const form = document.querySelector('.feedback-form');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
+const emailInput = document.querySelector('[name = "email"]');
+const messageInput = document.querySelector('[name = "message"]');
 
 const saveToLocalStorage = () => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 };
 
 const updateFormData = event => {
+ 
   formData[event.target.name] = event.target.value.trim();
   saveToLocalStorage();
 };
