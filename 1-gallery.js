@@ -2,8 +2,8 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{S as o}from"./assets/
   <a class="gallery-link" href=${p.original}>
     <img
       class="gallery-image"
-      src=${p.preview}
-      alt=${p.description}
+      src="${p.preview}"
+      alt="${p.description}"
     />
   </a>
 </li>
