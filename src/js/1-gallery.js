@@ -73,8 +73,8 @@ function templateImage(image) {
   <a class="gallery-link" href=${image.original}>
     <img
       class="gallery-image"
-      src=${image.preview}
-      alt=${image.description}
+      src="${image.preview}"
+      alt="${image.description}"
     />
   </a>
 </li>
